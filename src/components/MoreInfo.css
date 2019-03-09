@@ -1,0 +1,98 @@
+/* @import url("https://fonts.googleapis.com/css?family=PT+Sans");
+html, body, #app {
+  height: 100%;
+}
+.container {
+  min-height: 100%;
+  padding: 30px;
+  font-family: "PT Sans";
+  text-align: center;
+}
+.container h1 {
+  text-align: center;
+  color: #1569a8;
+  width:80%;
+}
+.container .btn {
+  display: inline-block;
+  margin-bottom: 20px;
+  border: 1px solid #1569a8;
+  background: white;
+  color: #1569a8;
+  padding: 5px 10px;
+  border-radius: 5px;
+  margin-right: 5px;
+  font-size: 15px;
+  cursor: pointer;
+  outline: none;
+}
+.container .btn:hover {
+  background: #1569a8;
+  color: white;
+  transition: 0.5s;
+} */
+.accordion {
+  margin: 0 auto;
+  width: 100%;
+}
+.accordion .title {
+  padding: 10px 10px;
+  margin-Top:30px;
+  cursor: pointer;
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+  color: black;
+  position: relative;
+  font-size: 20px;
+  background:white;
+  margin-bottom: -1px;
+  width:60%;
+  /* border-bottom: 1px solid #0e4671; */
+  text-align: left;
+   border: solid 1px #ccc;
+}
+
+.accordion .title::after {
+  content: "+";
+  font-size: 28px;
+  color: black;
+  transition: -webkit-transform 0.5s ease-in-out;
+  transition: transform 0.5s ease-in-out;
+  transition: transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
+  position: absolute;
+  right: 30%;
+  font-family: monospace;
+}
+.accordion .title.is-expanded {
+  /* transition: background 0.5s; */
+  background: white;
+  color: black;
+}
+.accordion .title.is-expanded::after {
+  content: "-";
+  font-size: 28px;
+}
+.accordion .content {
+  overflow: hidden;
+  max-height: 0;
+  transition: max-height 0.5s;
+
+  margin: 0px;
+  padding: 0 30px;
+  /* border: solid 1px #eee; */
+  border-top: 0;
+  background:white;
+}
+.accordion .content p {
+  padding: 15px 0px;
+  margin: 0;
+  opacity: 0;
+  transition: 0.5s;
+}
+.accordion .content.is-expanded {
+  max-height: 500px;
+  overflow: hidden;
+}
+.accordion .content.is-expanded p {
+  opacity: 1;
+}

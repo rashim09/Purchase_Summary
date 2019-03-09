@@ -1,0 +1,197 @@
+.App {
+  text-align: center;
+  margin: auto;
+}
+
+.BuildControl {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin: 5px 0;
+  width:80%;
+}
+
+.accordion {
+  margin: 0 auto;
+  width: 80%;
+}
+.price-summary{
+  background-color:white;
+  width: 100%;
+  display: flex; 
+  flex-flow: column;
+  align-items: center;
+  margin: auto;
+  padding: 10px ,0;
+}
+
+.BuildControl button {
+  display: block;
+  font: inherit;
+  padding: 5px;
+  margin: 0 5px;
+  width: 80px;
+  cursor: pointer;
+  outline: none;
+}
+.Label {
+  padding: 10px;
+  font-weight: bold;
+  width: 80px;
+  
+}
+.container{
+  position: fixed;
+  background-color: white;
+  height:95%;
+  margin:auto;
+  border: 1px solid #ccc;
+  box-shadow: 1px 1px 1px black;
+  padding: 16px;
+  left:30%; 
+  top:2%;
+  margin: auto;
+  box-sizing: border-box;
+  overflow: scroll;
+}
+
+@media (min-width : 600px){
+  .container{
+      width: 500px;
+      left: calc(50%-250px);
+  }
+}
+
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin-top: 2em; 
+  padding:0px;
+  background-color: #ccc ;
+}
+
+.BuildControl button {
+  display: block;
+  font: inherit;
+  padding: 5px;
+  margin: 0 5px;
+  width: 80px;
+  border: 1px solid #AA6817;
+  cursor: pointer;
+  outline: none;
+}
+
+.desc-column{
+  float: left;
+  width: 50%;
+  padding: 10px;
+  height: 10px;
+  text-align: left;
+  vertical-align: center !important;
+  
+}
+.price-column{
+  float: right;
+  width: 30%;
+  padding: 10px;
+  height: 10px;  
+  text-align: right;
+  vertical-align: center !important;
+}
+
+.item-col{
+  float: right;
+  width: 60%;
+  padding: 10px;
+  height: 10px;  
+  text-align: left;
+  vertical-align: center !important;
+}
+
+.discount-col{
+  float: left;
+  width: 50%;
+  padding: -10px;
+  height: 10px;
+  text-align: left;
+  vertical-align: center !important;
+  
+}
+.row {
+  display: flex;
+  align-items: center;
+  width:100%;
+  height: 40px;
+  vertical-align: center !important;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.saving{
+  width:100%;
+}
+
+.total-amount{
+  width:100%;
+  font-size: 20px;
+}
+
+.tax{
+  float: left;
+  width: 50%;
+  padding: 10px;
+  height: 20px;
+}
+
+.promo-input{
+  float: left;
+  width: 60%;
+ 
+  margin-top: 10px;
+  height: 40px;
+}
+
+.promo-row{
+  display: flex;
+  align-items: center;
+  width:100%;
+  height: 60px;
+  vertical-align: center !important;
+}
+
+.promo-row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.promo-btn{
+  border-Radius: 10px;
+  height:'28px';
+  width:'100%';
+  margin-left: 20px;
+  font-size: 20px;
+  font-weight: bold;
+  background-color:white;
+  border:2px solid black;
+  color:black;
+}
+
+.promo-btn-col{
+  float: right;
+  width: 20%;
+  padding: 10px;
+  height: 30px;  
+  text-align: center;
+  text-align: right;
+  vertical-align: center !important;
+}
