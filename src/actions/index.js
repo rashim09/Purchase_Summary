@@ -1,3 +1,5 @@
+import getPricingData from '../DataSource/PricingData';
+
 export const isDiscount = (isDiscount) => {
     console.log(isDiscount);
     return{
@@ -6,9 +8,18 @@ export const isDiscount = (isDiscount) => {
  };
 };
 
-export const totalAmount = (amount) => {
-    return {
-        type:'TOTAL_AMOUNT',
-        payload:amount
-    };
+// const response = getPricingData();
+// export const totalAmount = () => {
+//     return {
+//         type:'TOTAL_AMOUNT',
+//         payload:response
+//     };
+// };
+
+
+export const totalAmount = () => async dispatch => {
+    const response = await getPricingData();
+    console.log(response);
+    dispatch({ type:'TOTAL_AMOUNT', payload:response})
 };
+

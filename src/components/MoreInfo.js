@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './MoreInfo.css';
-import PromoCodeDetails from './PromoCodeDetails';
+import PromoCodeDetails from '../container/PromoCodeDetails';
 import ItemDetails from './ItemDetails'
 
 

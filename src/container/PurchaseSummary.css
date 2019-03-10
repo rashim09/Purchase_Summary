@@ -1,0 +1,50 @@
+
+.purchase_container{
+    background-color:white;
+    border: 2px solid #ccc;
+     margin: auto;
+     top: 2%;
+     right: 0;
+     bottom: 0;
+     height:98vh;
+     overflow: scroll;
+   
+}
+.itemrow{
+    display: flex;
+    align-items: center;
+    flex-flow: row;
+    margin:20px;
+    justify-content: space-between;
+    flex-shrink: 0;
+  }
+
+  .total{
+  margin-left:20px;
+  font-size: 20px;
+  }
+
+  .qty{
+    display: flex;
+    flex-flow: column;
+    justify-content: flex-end; 
+    padding-left: 10px;
+  }
+
+  @media (min-width : 600px){
+    .purchase_container{
+        width: 500px;
+        left: calc(50%-250px);
+    }
+  }
+
+  hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin-top: 2em; 
+    padding:0px;
+    margin: 20px;
+    background-color: #ccc ;
+  }

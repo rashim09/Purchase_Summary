@@ -28,7 +28,7 @@
   .tooltip-bottom::after {
       border-left: 9px solid transparent;
       border-right: 9px solid transparent;
-      border-bottom: 9px solid #ccc;
+      border-bottom: 9px solid rgb(241, 234, 234);
       top: 0;
       left: 50%;
       transform: translateX(-50%);
